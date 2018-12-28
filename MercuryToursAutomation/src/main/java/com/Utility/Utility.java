@@ -16,7 +16,7 @@ public class Utility {
 
 				    
 				    try {
-				        input = new FileInputStream("C:\\Users\\Lenovo\\Desktop\\MercuryTours\\MercuryToursAutomation\\src\\main\\java\\com\\resources\\config.properties");
+				        input = new FileInputStream("C:\\Users\\Lenovo\\Desktop\\GitFolder\\Resources\\config.properties");
 
 				        // load a properties file
 				        
