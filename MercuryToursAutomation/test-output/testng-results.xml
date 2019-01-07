@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="216" started-at="2019-01-04T10:59:59Z" finished-at="2019-01-04T11:00:00Z">
+  <suite name="Default suite" duration-ms="45" started-at="2019-01-07T08:04:44Z" finished-at="2019-01-07T08:04:44Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="216" started-at="2019-01-04T10:59:59Z" finished-at="2019-01-04T11:00:00Z">
+    <test name="Default test" duration-ms="45" started-at="2019-01-07T08:04:44Z" finished-at="2019-01-07T08:04:44Z">
       <class name="testNgPackage.TC_001">
-        <test-method status="PASS" signature="befsuite()[pri:0, instance:testNgPackage.TC_001@5c7fa833]" name="befsuite" is-config="true" duration-ms="15" started-at="2019-01-04T10:59:59Z" finished-at="2019-01-04T10:59:59Z">
+        <test-method status="PASS" signature="befsuite()[pri:0, instance:testNgPackage.TC_001@224edc67]" name="befsuite" is-config="true" duration-ms="902" started-at="2019-01-07T08:04:43Z" finished-at="2019-01-07T08:04:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- befsuite -->
-        <test-method status="PASS" signature="beftst()[pri:0, instance:testNgPackage.TC_001@5c7fa833]" name="beftst" is-config="true" duration-ms="1" started-at="2019-01-04T10:59:59Z" finished-at="2019-01-04T10:59:59Z">
+        <test-method status="PASS" signature="beftst()[pri:0, instance:testNgPackage.TC_001@224edc67]" name="beftst" is-config="true" duration-ms="1" started-at="2019-01-07T08:04:44Z" finished-at="2019-01-07T08:04:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beftst -->
-        <test-method status="PASS" signature="brfCls()[pri:0, instance:testNgPackage.TC_001@5c7fa833]" name="brfCls" is-config="true" duration-ms="1" started-at="2019-01-04T10:59:59Z" finished-at="2019-01-04T10:59:59Z">
+        <test-method status="PASS" signature="brfCls()[pri:0, instance:testNgPackage.TC_001@224edc67]" name="brfCls" is-config="true" duration-ms="0" started-at="2019-01-07T08:04:44Z" finished-at="2019-01-07T08:04:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- brfCls -->
-        <test-method status="PASS" signature="test()[pri:0, instance:testNgPackage.TC_001@5c7fa833]" name="test" duration-ms="188" started-at="2019-01-04T10:59:59Z" finished-at="2019-01-04T11:00:00Z">
+        <test-method status="PASS" signature="test()[pri:0, instance:testNgPackage.TC_001@224edc67]" name="test" duration-ms="13" started-at="2019-01-07T08:04:44Z" finished-at="2019-01-07T08:04:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method status="PASS" signature="endsuit()[pri:0, instance:testNgPackage.TC_001@5c7fa833]" name="endsuit" is-config="true" duration-ms="408" started-at="2019-01-04T11:00:00Z" finished-at="2019-01-04T11:00:00Z">
+        <test-method status="PASS" signature="endsuit()[pri:0, instance:testNgPackage.TC_001@224edc67]" name="endsuit" is-config="true" duration-ms="456" started-at="2019-01-07T08:04:44Z" finished-at="2019-01-07T08:04:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endsuit -->

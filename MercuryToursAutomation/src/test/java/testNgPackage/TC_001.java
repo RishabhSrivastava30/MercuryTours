@@ -1,5 +1,7 @@
 package testNgPackage;
 
+import java.io.IOException;
+
 import org.apache.log4j.xml.DOMConfigurator;
 import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
@@ -23,6 +25,12 @@ public class TC_001 {
 			
 			
 			System.out.println("bs1");
+			try {
+				Utility.excelValToMap("TC_001");
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			
 			//extent=new ExtentReports(System.getProperty("user.dir")+"test-output/MercuryTours-HtmlReport.html",true)
 		}
@@ -36,6 +44,7 @@ public class TC_001 {
 		@BeforeTest
 		public void beftst() {
 			System.out.println("bt1");
+			System.out.println("Ye Dekho"+Utility.map.get("Number"));
 		}
 		
 		@Test

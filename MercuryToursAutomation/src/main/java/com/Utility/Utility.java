@@ -3,8 +3,13 @@ package com.Utility;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.HashMap;
 import java.util.Properties;
 
+import org.apache.poi.ss.usermodel.CellType;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.Assert;
 
 import com.relevantcodes.extentreports.ExtentReports;
@@ -15,6 +20,34 @@ public class Utility {
 
 	 static ExtentReports extent= new ExtentReports (System.getProperty("user.dir") +"/test-output/MercuryTours-Report.html", true);;
 	 static ExtentTest logger;
+public static HashMap<String, String> map;
+	 
+	 public static void excelValToMap(String strSheetName) throws IOException {
+			String FilePath = "C:\\Users\\Lenovo\\Desktop\\GitFolder\\Resources\\MercuryTours-TestData.xlsx";
+			 FileInputStream fs = new FileInputStream(FilePath);
+			
+			XSSFWorkbook wb=new XSSFWorkbook(fs);
+			 
+			 XSSFSheet sh= wb.getSheet(strSheetName);
+			 System.out.println(sh.getLastRowNum());
+			 
+			 //Create map and add key value pair
+			
+			 map = new HashMap<String, String>();
+			 map.clear();
+			 for(int i=1; i<=sh.getLastRowNum(); i++)
+			 {
+				 XSSFCell cell=sh.getRow(i).getCell(1);
+				 cell.setCellType(CellType.STRING);
+				 
+				 
+				 map.put(sh.getRow(i).getCell(0).getStringCellValue(), cell.getStringCellValue().trim());
+			 }
+			 
+			 System.out.println(map.get("First Name"));
+			 
+			wb.close(); 
+		}
 	 //extent = new ExtentReports (System.getProperty("user.dir") +"/test-output/MercuryTours-Report.html", true);
 	public static void passtest()
 	{
